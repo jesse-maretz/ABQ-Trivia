@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>How well do you know ABQ?</title>
+    <title>ABQ Trivia</title>
 </head>
 <body>
     <div class="splash">
@@ -18,15 +18,18 @@
 
     <div class="container">
         <div id="question-box" class='hide'>
-            <div id="question"></div>
+            <div id="question"><h2>Question</h2></div>
             <div class="btnGrid" id="answerBtns">
-                <button class="ansBtns">Ans1</button>
-                <button class="ansBtns">Ans2</button>
-                <button class="ansBtns">Ans3</button>
-                <button class="ansBtns">Ans4</button>
+                <button class="btns">Ans1</button>
+                <button class="btns">Ans2</button>
+                <button class="btns">Ans3</button>
+                <button class="btns">Ans4</button>
             </div>
         </div>
-
+        <div class="controls">
+            <button class='startBtn btn' id='startBtn'>Start</button>
+            <button class='nextBtn btn hide' id='nextBtn'>Next</button>
+        </div>
     </div>
 
 
