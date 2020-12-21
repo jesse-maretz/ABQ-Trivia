@@ -47,6 +47,7 @@ let currentQ = document.querySelector('#question')
 let answerBtns = document.querySelectorAll('.answerBtns')
 let answerParent = document.querySelector('.btnGrid')
 let nextBtn = document.querySelector('#nextBtn')
+let resetBtn = document.querySelector('.reset')
 let qCtr = 0
 
 //adding event listenener to the start button
@@ -78,7 +79,7 @@ function loadQNA(){
     function handleClick(e) {
        if (e.target !== e.currentTarget) {
            //let clickedItem = e.target.id;
-          //alert('consider the click handled!')
+          alert('consider the click handled!')
           //console.log(questionArr[qCtr].answers[i].correct)
           //console.log(e.target.innerText)
           if(questionArr[qCtr].answers[i].answer == e.target.innerText && questionArr[qCtr].answers[i].correct === true) {
@@ -117,4 +118,5 @@ function checkAns() {
 }
 function endGame(){
     console.log('im done')
+    resetBtn.classList.remove('hide')
 }
